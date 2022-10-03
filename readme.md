@@ -2,4 +2,4 @@
 
 ## Git examples:
 
-### git push
+### git checkout: Moves the HEAD where you choose
