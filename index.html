@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+        <meta name="description" content="Learning HTML & CSS" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Web page</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <script src="index.js"></script>
+        <title>Learning web</title>
     </head>
     <body>
         <header>
-            <h1>First web page</h1>
+            <h1>HTML</h1>
+            <nav>
+                <a href="./contactos.html">Contactos</a>
+            </nav>
         </header>
+        <section>
+            <h2>Tipos de etiquetas</h2>
+            <ul>
+                <li>Sectioning y grouping</li>
+                <li>Text-level semantics y Links (in-line)</li>
+                <li>Embedded content (img, iframe, video, audio)</li>
+                <li>Forms, inputs</li>
+            </ul>
+            <a href="https://html.spec.whatwg.org/multipage/"
+                >Más información</a
+            >
+        </section>
+        <article>
+            <img
+                src="https://www.purina.es/sites/default/files/2021-12/Welcoming_hero.jpg"
+                alt="Un gatito"
+            />
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/wTpuKOhGfJE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </article>
+        <form>
+            <input type="text" name="" id="" placeholder="Dime tu nombre" />
+        </form>
+        <footer>
+            <address>ISDI Coders</address>
+        </footer>
     </body>
 </html>

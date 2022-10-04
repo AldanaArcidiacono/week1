@@ -77,6 +77,19 @@ gitHub flow = When you made a pull request of a branch, review the pull request.
 
 # Learning HTML
 
-We always have a header and a body on a HTML file <br>
+We always have a head and a body on a HTML file <br>
 DOCTYPE: tells the program witch HTML you are using <br>
 < tag attribute="" >
+
+## Viewport
+
+Is used for mobiles
+
+#### Meta desc
+
+Adds a description to the web page, to show it on google
+
+#### Favicon
+
+Is important to always have a favicon, so the page can be accessible <br>
+We can use a file .ico or .png
