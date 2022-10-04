@@ -77,6 +77,6 @@ gitHub flow = When you made a pull request of a branch, review the pull request.
 
 # Learning HTML
 
-We always have a header and a body on a HTML file
+We always have a header and a body on a HTML file <br>
 DOCTYPE: tells the program witch HTML you are using <br>
-<tag attribute="">
+< tag attribute="" >
