@@ -64,3 +64,13 @@ Conflicts happens when two persons makes changes in the same branch. We have to 
 To merge a branch with the main.
 WE DON'T WORK ON MAIN. (just the initial files)
 I ask for a pull and after someone sees it and approves it, is fusion with the main
+We take the branches to the remote repo
+With this we incorporate from the branch on GitHub to the main of GitHub
+git push origin (name of the branch)
+
+## Work flows
+
+Rules to follow that the company decides to use
+git flow =
+We will use 🔽
+gitHub flow = When you made a pull request of a branch, review the pull request. When this is approves, you can merge it and delete the branch. Master always protected. Master always actualized
