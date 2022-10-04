@@ -58,3 +58,9 @@ It has a cleaner structure, but you can not see when you made a change in other 
 ## Resolving conflicts
 
 Conflicts happens when two persons makes changes in the same branch. We have to talk with the other person and decide witch one we should apply.
+
+## Pull Request
+
+To merge a branch with the main.
+WE DON'T WORK ON MAIN. (just the initial files)
+I ask for a pull and after someone sees it and approves it, is fusion with the main
