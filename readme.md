@@ -24,15 +24,3 @@ It has 4 parts.
 Message
 Parent
 Name
-
-## Branches
-
-A branch is a LABEL.
-I can move it and deleted.
-We have infinites branches but only ONE HEAD.
-git reset (name of the commit) to put it in the branch we need
-A branch points only to a commit
-
-## Label HEAD
-
-We can only move it, With the command git checkout
