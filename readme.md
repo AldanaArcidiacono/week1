@@ -24,6 +24,8 @@ It has 4 parts.
 Message
 Parent
 Name
+Date
+The commits are immutable.
 
 ## Branches
 
@@ -33,6 +35,26 @@ We have infinites branches but only ONE HEAD.
 git reset (name of the commit) to put it in the branch we need
 A branch points only to a commit
 
+## Delete a branch
+
+We are just deleting a LABEL
+We go to main and use the command git branch -d (name of the branch)
+
 ## Label HEAD
 
 We can only move it, With the command git checkout
+
+## Merge
+
+We have to go to our MAIN and then do the command git merge
+Git makes a new commit to unite the MAIN (that may change) and your new branch
+
+## Rebase
+
+Also does a MERGE.
+At the end, it looks like we made a fast-forward. Because it deletes the commits in the middle and re-write them (we have news commits, since this ones can not change)
+It has a cleaner structure, but you can not see when you made a change in other branch
+
+## Resolving conflicts
+
+Conflicts happens when two persons makes changes in the same branch. We have to talk with the other person and decide witch one we should apply.
