@@ -74,3 +74,9 @@ Rules to follow that the company decides to use
 git flow =
 We will use 🔽
 gitHub flow = When you made a pull request of a branch, review the pull request. When this is approves, you can merge it and delete the branch. Master always protected. Master always actualized
+
+# Learning HTML
+
+We always have a header and a body on a HTML file
+DOCTYPE: tells the program witch HTML you are using <br>
+<tag attribute="">
