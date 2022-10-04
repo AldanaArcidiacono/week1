@@ -34,4 +34,4 @@ git reset (name of the commit) to put it in the branch we need
 
 ## Label HEAD
 
-We can only move it. With the command git checkout
+We can only move it, With the command git checkout
