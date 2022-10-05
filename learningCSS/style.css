@@ -1,3 +1,8 @@
+/* Esto siempre lo hacemos */
+* {
+    box-sizing: border-box;
+}
+
 /* Directivas que empiezan con @ ⬇*/
 /* Media Queris */
 /* Key frames permite definir animaciones */
@@ -17,8 +22,14 @@ h2 {
 
 /* Selector de ID NO SE USA*/
 
+/* Mas especificidad */
 #id {
     font-size: 1rem;
+}
+
+/* Menos especificidad */
+[id='id'] {
+    font-size: 3rem;
 }
 
 /* Selector de atributo. Cualquier cosa que tenga un atributo con lo que le digas*/
@@ -78,3 +89,7 @@ N vale lo que diga el numero entre ()*/
 p:nth-of-type(2n) {
     font-size: 2rem;
 }
+
+/* Especificidad y cascada */
+/* Si tengo dos instrucciones, siempre se dibuja la que tiene mayor especificidad */
+/* Si tengo la misma especificidad se aplica la cascada (usa el ultimo que pusiste) */
