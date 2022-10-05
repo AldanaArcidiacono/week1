@@ -35,6 +35,13 @@ We have infinites branches but only ONE HEAD.
 git reset (name of the commit) to put it in the branch we need
 A branch points only to a commit
 
+## Have conflicts locally
+
+First actualize the Main.
+I go to my branch and do a MERGE MAIN.
+Resolve conflict.
+Go to gitHub and do the pull request
+
 ## Delete a branch
 
 We are just deleting a LABEL
@@ -81,7 +88,7 @@ We always have a head and a body on a HTML file <br>
 DOCTYPE: tells the program witch HTML you are using <br>
 < tag attribute="" >
 
-## Viewport
+### Viewport
 
 Is used for mobiles
 
@@ -89,7 +96,7 @@ Is used for mobiles
 
 Adds a description to the web page, to show it on google
 
-#### Favicon
+### Favicon
 
 Is important to always have a favicon, so the page can be accessible <br>
 We can use a file .ico or .png
