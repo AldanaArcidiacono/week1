@@ -1,3 +1,8 @@
+/* Directivas que empiezan con @ ⬇*/
+/* Media Queris */
+/* Key frames permite definir animaciones */
+/* Suports permite consultar que elementos soporta y que no */
+
 /* Selector de etiquta */
 
 h2 {
@@ -14,6 +19,11 @@ h2 {
 
 #id {
     font-size: 1rem;
+}
+
+/* Selector de atributo. Cualquier cosa que tenga un atributo con lo que le digas*/
+[name='foo'] {
+    color: blueviolet;
 }
 
 /* Multiples selectores */
@@ -43,7 +53,7 @@ div~p {
     color: brown;
 }
 
-/* Pseudo clases y pseudo elementos  recibe su condicion de elemento sin que le pongas una etiqueta*/
+/* Pseudo elementos  recibe su condicion de elemento sin que le pongas una etiqueta*/
 p::first-letter, h1::first-letter {
     font-size: 4rem;
 }
@@ -55,4 +65,16 @@ h1::after {
 
 h1::before {
     content: '👑';
+}
+
+/* Pseudo clase pertenece a la clase por su circunstancia, Se determina la clase por su estado */
+
+p:hover {
+    background-color: aqua;
+}
+
+/* Depende de la posicion que ocupa dependiendo del lugar que ocupa 
+N vale lo que diga el numero entre ()*/
+p:nth-of-type(2n) {
+    font-size: 2rem;
 }
