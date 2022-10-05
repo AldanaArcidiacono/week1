@@ -77,26 +77,27 @@ git push origin (name of the branch)
 
 ## Work flows
 
-Rules to follow that the company decides to use
+Reglas que la compania / empresa decide utilizar
 git flow =
-We will use 🔽
-gitHub flow = When you made a pull request of a branch, review the pull request. When this is approves, you can merge it and delete the branch. Master always protected. Master always actualized
+En el bootcamp usamos 🔽
+gitHub flow = Cuando haces un pull request de una rama, revisamos el pull request primero. Si este es aprovado, lo mergeamos y eliminamos la rama.
+Main siempre debe estar protegido y actualizado.
 
 # Learning HTML
 
-We always have a head and a body on a HTML file <br>
-DOCTYPE: tells the program witch HTML you are using <br>
+Siempre tenemos un HEAD y un BODY en un archivo HTML<br>
+DOCTYPE: dice que programa de HTML estas usando<br>
 < tag attribute="" >
 
 ## DRY
 
 Don't repeat yourself
-Do not repeat code one and other time in different pages that are link
-We will mont the page dynamically, with components (React, view, angular)
+No realizar codigo repetido o copiado y pegado en diferentes links de la misma pagina
+La pagina se monta dinamicamente con componenetes (como React, View, Angular)
 
 ### Viewport
 
-Is used for mobiles
+Se utiliza para moviles
 
 ### Meta desc
 
@@ -118,7 +119,7 @@ DIV ...
 
 ### Menus
 
-Los menus se realizan con listas <ul> / <ol>
+Los menus se realizan con listas < ul > / < ol >
 
 ## Etiquetas con valor semantico ()
 
@@ -158,23 +159,37 @@ Reserva el espacio mencionado para la foto y no da saltos al cargar la pagina, m
 Se envuelven en una etiqueta < form > y dentro de ella usamos los controles de formulario
 
 Nunca puede haber un campo de formalario que no indique que se debe escribir en el
-Deben tener botones.
-
-Se define como < button type="submit" >. Estos disparan los mecanismos de funcion y ayudan a la usabilidad, ya que tocando ENTER se activa el boton
 
 Si es obligatorio, se le agrega el atributo < required >
 
-Label: Etiqueta de un campo del formulario. Enlaza las palabras con el formulario. En el for se pone el ID de la parte del formulario que quieres.
+### Deben tener botones.
+
+Se define como < button type="submit" >.
+Estos disparan los mecanismos de funcion y ayudan a la usabilidad, ya que tocando ENTER se activa el boton
+
+### Label
+
+Etiqueta de un campo del formulario. Enlaza las palabras con el formulario. En el for se pone el ID de la parte del formulario que quieres.
 Por ej, sirve para que no haya que tocar el cuadradito del checkbox y que con tocar el texto de al lado, te tome la respuesta
 
-Pattern: Se usa para requerir sierto formato en el formulario. Por ej, numero de cuenta.
+### Pattern
 
-minlength: Longitud minima del texto que debe escribir el usuario
+Se usa para requerir sierto formato en el formulario. Por ej, numero de cuenta.
 
-RadioButtons: Se agrupan por grupos, a traves del NAME. Usan el mismo.
+### Minlength
 
-Select: Agrupa dos etiquetas distintas y genera una ventana desplegable con opciones
+Longitud minima del texto que debe escribir el usuario
 
-Interaccion por parte del usuario fuera del FORM: DETAILS
-Permite indicar un elemento SUMMARY y Parrafos
-Genera un desplegable con info
+### RadioButtons
+
+Se agrupan por grupos, a traves del NAME. Usan el mismo.
+
+### Select
+
+Agrupa dos etiquetas distintas y genera una ventana desplegable con opciones
+
+### Details
+
+Interaccion por parte del usuario fuera del FORM
+Permite indicar un elemento SUMMARY y Parrafos.
+Genera un desplegable con la info de los parrafos, la cual solo se ve al clicar
