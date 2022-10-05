@@ -32,7 +32,7 @@
         <article>
             <img
                 src="https://www.purina.es/sites/default/files/2021-12/Welcoming_hero.jpg"
-                alt="Un gatito"
+                alt="cat"
             />
             <iframe
                 width="560"
@@ -43,10 +43,55 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
             ></iframe>
+            <dialog>Esto no se ve</dialog>
         </article>
         <form>
-            <input type="text" name="" id="" placeholder="Dime tu nombre" />
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="What's your name"
+                minlength="2"
+                autocomplete="off"
+                required
+            />
+            <input type="checkbox" name="isOk" id="isOk" required />
+            <label for="isOk">I agree</label>
+            <div>
+                <input
+                    type="radio"
+                    name="time"
+                    id="t1"
+                    value="M"
+                />morning<label for="t1"></label>
+                <input
+                    type="radio"
+                    name="time"
+                    id="t2"
+                    value="A"
+                />afternoon<label for="t2"></label>
+                <input type="radio" name="time" id="t3" value="N" />night<label
+                    for="t3"
+                ></label>
+            </div>
+
+            <select name="curse" id="">
+                <option value=""></option>
+                <option value="A">Angular</option>
+                <option value="R">React</option>
+            </select>
+
+            <button type="submit">Send</button>
         </form>
+        <article>
+            <details>
+                <summary>Titulo</summary>
+                <p>asda</p>
+                <p>fggdf</p>
+                <p>reter</p>
+                <p>ertert</p>
+            </details>
+        </article>
         <footer>
             <address>ISDI Coders</address>
         </footer>

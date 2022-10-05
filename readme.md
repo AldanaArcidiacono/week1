@@ -88,15 +88,93 @@ We always have a head and a body on a HTML file <br>
 DOCTYPE: tells the program witch HTML you are using <br>
 < tag attribute="" >
 
+## DRY
+
+Don't repeat yourself
+Do not repeat code one and other time in different pages that are link
+We will mont the page dynamically, with components (React, view, angular)
+
 ### Viewport
 
 Is used for mobiles
 
-#### Meta desc
+### Meta desc
 
-Adds a description to the web page, to show it on google
+Agrega una descripcion de la pagina para que luego se muestre en el buscador de google
 
 ### Favicon
 
-Is important to always have a favicon, so the page can be accessible <br>
-We can use a file .ico or .png
+Es importante siempre tener un favicon. Para hacer la pagina accesible.
+Usamos un file .ico o .png
+
+### HGROUP
+
+Se usa para que tus elementos H (h1, h2, h3...) sepan que estas usando la sigueinte como un subtitulo
+
+### Group elements
+
+SECTION ...
+DIV ...
+
+### Menus
+
+Los menus se realizan con listas <ul> / <ol>
+
+## Etiquetas con valor semantico ()
+
+### Section
+
+### Article
+
+Es una seccion que otorga un bloque de articulo a algo
+Agrupa toda la informacion que necesitas para comprender el texto
+Informacion distribuible u objetos reales
+Que con ese trozo de informacion te puedas enterar de todo (EJ: Una noticia, un elemento de una tienda)
+
+### Aside
+
+Info complementaria a la principal de la pag web
+
+### Address
+
+Datos de autoria de la pagina. Suele estar en el footer
+
+## Grouping
+
+### Main
+
+Agrupador de elementos principales
+Agrupa lo que no es compartido con el resto de las pag del sitio.
+Solo se usa UNA VEZ por página
+
+## Imagenes
+
+Usan un atributo width y height.
+Se pone la altura y anchura real de mi foto o la que voy a decidir por CSS para que ocupe
+Reserva el espacio mencionado para la foto y no da saltos al cargar la pagina, mejora la optimizacion
+
+## Formularios
+
+Se envuelven en una etiqueta < form > y dentro de ella usamos los controles de formulario
+
+Nunca puede haber un campo de formalario que no indique que se debe escribir en el
+Deben tener botones.
+
+Se define como < button type="submit" >. Estos disparan los mecanismos de funcion y ayudan a la usabilidad, ya que tocando ENTER se activa el boton
+
+Si es obligatorio, se le agrega el atributo < required >
+
+Label: Etiqueta de un campo del formulario. Enlaza las palabras con el formulario. En el for se pone el ID de la parte del formulario que quieres.
+Por ej, sirve para que no haya que tocar el cuadradito del checkbox y que con tocar el texto de al lado, te tome la respuesta
+
+Pattern: Se usa para requerir sierto formato en el formulario. Por ej, numero de cuenta.
+
+minlength: Longitud minima del texto que debe escribir el usuario
+
+RadioButtons: Se agrupan por grupos, a traves del NAME. Usan el mismo.
+
+Select: Agrupa dos etiquetas distintas y genera una ventana desplegable con opciones
+
+Interaccion por parte del usuario fuera del FORM: DETAILS
+Permite indicar un elemento SUMMARY y Parrafos
+Genera un desplegable con info
