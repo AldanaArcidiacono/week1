@@ -29,51 +29,53 @@ The commits are immutable.
 
 ## Branches
 
-A branch is a LABEL.
-I can move it and deleted.
-We have infinites branches but only ONE HEAD.
-git reset (name of the commit) to put it in the branch we need
+Una rama es una etiqueta.
+Se puede mover y eliminar.
+Podemos tener ramas infinitas. Pero solo UN HEAD
+git reset (nombre del commit) para ponerlo en la rama que queramos
 A branch points only to a commit
 
 ## Have conflicts locally
 
-First actualize the Main.
-I go to my branch and do a MERGE MAIN.
-Resolve conflict.
-Go to gitHub and do the pull request
+Primero actualizamos el MAIN
+Vamos a la rama y hacemos un MERGE al MAIN
+Resolvemos el conflicto (en local)
+Lo enviamos a GitHub, donde hacemos el pull request
 
 ## Delete a branch
 
-We are just deleting a LABEL
-We go to main and use the command git branch -d (name of the branch)
+Solo se esta borrando una etiqueta
+Vamos al MAIN y usamos el comando:
+git branch -d (nombre de la rama)
 
 ## Label HEAD
 
-We can only move it, With the command git checkout
+Solo podemos moverlo con el comando
+git checkout
 
 ## Merge
 
-We have to go to our MAIN and then do the command git merge
-Git makes a new commit to unite the MAIN (that may change) and your new branch
+Debemos ir al MAIN, luego hacer un
+command git merge
+Git hace un nuevo commit para unir la rama (la cual irá cambiando) y el MAIN
 
 ## Rebase
 
-Also does a MERGE.
-At the end, it looks like we made a fast-forward. Because it deletes the commits in the middle and re-write them (we have news commits, since this ones can not change)
-It has a cleaner structure, but you can not see when you made a change in other branch
+Tambien hace un MERGE.
+Cuando termina, se ve como si se hubiera hecho un fast-forward. Ya que elimina los commits que han quedado en el medio y los re-escribe (Tendremos nuevos commits, ya que los que hicimos no se pueden modificar)
+Tiene una estructura limpia, pero no puedes ver los cambios hechos
 
-## Resolving conflicts
+## Resolver conflictos
 
-Conflicts happens when two persons makes changes in the same branch. We have to talk with the other person and decide witch one we should apply.
+Los conflictos pasan cuando dos personas realizan cambios en la misma rama. Para solucionarlo se debe hablar con la otra persona y desidir cual deberíamos aplicar.
 
 ## Pull Request
 
-To merge a branch with the main.
-WE DON'T WORK ON MAIN. (just the initial files)
-I ask for a pull and after someone sees it and approves it, is fusion with the main
-We take the branches to the remote repo
-With this we incorporate from the branch on GitHub to the main of GitHub
-git push origin (name of the branch)
+Se usa para mergiar una rama al main.
+NO SE TRABAJA EN MAIN. (Solo los archivos iniciales si)
+Se pregunta para hacer una pull request y despues que alguien la aprueba, la rama se fusiona con el main.
+Podemos llevar las ramas al repo remoto, para incorporar la rama al main de GitHub
+git push origin (nombre de rama)
 
 ## Work flows
 
@@ -83,7 +85,7 @@ En el bootcamp usamos 🔽
 gitHub flow = Cuando haces un pull request de una rama, revisamos el pull request primero. Si este es aprovado, lo mergeamos y eliminamos la rama.
 Main siempre debe estar protegido y actualizado.
 
-# Learning HTML
+# HTML
 
 Siempre tenemos un HEAD y un BODY en un archivo HTML<br>
 DOCTYPE: dice que programa de HTML estas usando<br>
@@ -193,3 +195,20 @@ Agrupa dos etiquetas distintas y genera una ventana desplegable con opciones
 Interaccion por parte del usuario fuera del FORM
 Permite indicar un elemento SUMMARY y Parrafos.
 Genera un desplegable con la info de los parrafos, la cual solo se ve al clicar
+
+# CSS
+
+Nunca usamos el atributo STYLE para modificar el CSS dentro del HTML. A no ser, que estes usando un framework que necesites que lo hagas
+EJ: < h1 style="font-size: 1rem" >
+
+La etiqueta < style >, se puede usar si estas haciendo una prueba o poniendo estilos muy cortos.
+
+Teniendo en un fichero aparte, mejora la legibilidad y puede hacer que varios HTML usen el mismo diseño de CSS
+
+Selector de ID NO SE USA ya que tiene demasiadas especificaciones
+
+Selectores multiples: Le agrega a varias cosas el mismo estilo
+
+### Medida REM:
+
+Si quiero modificar fuentes siempre uso REM por accesibilidad. Ayuda al usuario a que pueda aumentar la tipografia. Cosa que los PX no permiten

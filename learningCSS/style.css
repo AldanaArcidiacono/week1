@@ -1,0 +1,58 @@
+/* Selector de etiquta */
+
+h2 {
+    font-size: 1rem;
+}
+
+/* Selector de clase */
+
+.estandar {
+    font-size: 16px;
+}
+
+/* Selector de ID NO SE USA*/
+
+#id {
+    font-size: 1rem;
+}
+
+/* Multiples selectores */
+ul, ol {
+    list-style: lower-alpha;
+}
+
+/* Selectores por convinacion de elementos. EJ el p desendiente de section. Es un unico selector */
+section p {
+    color: black
+}
+
+/* Selectores por convinacion de elementos. EJ el p HIJO direc de section. Es un unico selector */
+
+section>p {
+    color: black
+}
+
+/* Selector de hermano adyasente (Hermano siguiente directo)*/
+div+p {
+    /* color: blue; */
+    font-style: italic;
+}
+
+/* Selector de hermano siguientes (Hermano pero hay uno en el medio)*/
+div~p {
+    color: brown;
+}
+
+/* Pseudo clases y pseudo elementos  recibe su condicion de elemento sin que le pongas una etiqueta*/
+p::first-letter, h1::first-letter {
+    font-size: 4rem;
+}
+
+/* Generan contenido que no existe en HTML. el contenido va entre comillas */
+h1::after {
+    content: '❤';
+}
+
+h1::before {
+    content: '👑';
+}
