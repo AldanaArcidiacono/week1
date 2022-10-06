@@ -108,3 +108,9 @@ p:nth-of-type(2n) {
 /* Especificidad y cascada */
 /* Si tengo dos instrucciones, siempre se dibuja la que tiene mayor especificidad */
 /* Si tengo la misma especificidad se aplica la cascada (usa el ultimo que pusiste) */
+
+
+/* Si necesitas hacer un calculo se puede usar calc para tener la medida exacta */
+main {
+    min-height: calc(100vh - 24vh)vh;
+}
