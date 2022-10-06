@@ -29,3 +29,10 @@ body {
 p {
     width: 50ch;
 }
+
+/* p{
+    flex: 1 0 auto;
+    flex-basis: ; Que quiero que tomen como punto de partida
+    flex-shrink: ; Cuanto quiero que puedan encoger
+    flex-grow: ; Cuanto quiero que puedan crecer
+} */

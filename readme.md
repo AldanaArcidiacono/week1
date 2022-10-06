@@ -283,6 +283,7 @@ El margen se entiende como una cosa externa
 Reacomodar la disposicion de los elementos (Layout)
 Para ayudarnos a crear layouts usamos flex-box y grid (cuando sea necesario)
 Ambos son modos de display
+Para comenzar tener siempre la cantidad de bloques necesarios.
 
 ### Display FLEX
 
@@ -326,3 +327,26 @@ Lo realiza respecto a los hijos del contenedor al que se lo aplicas
 
 Con order le damos un orden a sus hijos EJ: order: 2; (lo pone segundo)
 Para posicionar un elemento sin tener en cuenta los demas elementos EJ align-self: center;
+
+#### Flex
+
+flex: 0 1 auto;
+Flex es el resumen de las demas propiedades juntas:
+
+flex-grow: ; Cuanto quiero que puedan crecer. Le digo que puede crecer X más que su hermano
+flex-shrink: ; Cuanto quiero que puedan encoger
+flex-basis: ; Que quiero que tomen como punto de partida
+
+Si los dos tienen el valor de creciemito igual (grow) crecen al 50%
+Utiliza un ratio entre valores. Hay veces que no es tan preciso.
+
+## Metalenguaje
+
+Un lenguaje que el navegador no entiende. El navegador solo entiende JS, CSS y HTML
+Podemos usar uno, como TY o SASS, pero hay que traducirlos.
+Codigo fuente y codigo compilado:
+El codigo fuente (EJ: SASS), no tiene ningun valor y hay que compilarlo para subirlo (EJ: netlify)
+
+### Sass
+
+Es un pre-procesador de CSS
