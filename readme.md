@@ -101,6 +101,12 @@ Don't repeat yourself
 No realizar codigo repetido o copiado y pegado en diferentes links de la misma pagina
 La pagina se monta dinamicamente con componenetes (como React, View, Angular)
 
+### HEADER
+
+Puede tener elementos de navegacion y de informacion principal de la pagina. Pero no es obligatorio.
+Lleva el logo y menu.
+Para poner el log, EJ en index.html de esta carpeta
+
 ### Viewport
 
 Se utiliza para moviles
@@ -120,16 +126,15 @@ Se usa para que tus elementos H (h1, h2, h3...) sepan que estas usando la siguei
 
 ### Group elements
 
-SECTION ...
-DIV ...
+SECTION: Suelen tener título. Solo respetando la semantica. Agrupa una seccion de informacion. Si no le puedes poner nombre, suele significar que no es necesario usarla.
+
+DIV: Se pueden usar tantos como quieras. Dividen elementos de la pagina
 
 ### Menus
 
 Los menus se realizan con listas < ul > / < ol >
 
 ## Etiquetas con valor semantico ()
-
-### Section
 
 ### Article
 
@@ -153,6 +158,7 @@ Datos de autoria de la pagina. Suele estar en el footer
 Agrupador de elementos principales
 Agrupa lo que no es compartido con el resto de las pag del sitio.
 Solo se usa UNA VEZ por página
+No aporta nada a la estructura del sitio
 
 ## Imagenes
 
@@ -200,6 +206,14 @@ Interaccion por parte del usuario fuera del FORM
 Permite indicar un elemento SUMMARY y Parrafos.
 Genera un desplegable con la info de los parrafos, la cual solo se ve al clicar
 
+#### HR
+
+No se usa para hacer la linea. Se hace desde CSS, dandole un borde al elemento superior o al elemento inferior
+
+#### BR
+
+No se usa. Para dar un salto de linea se hace desde CSS con margin y paddin
+
 # CSS
 
 Nunca usamos el atributo STYLE para modificar el CSS dentro del HTML. A no ser, que estes usando un framework que necesites que lo hagas
@@ -213,6 +227,102 @@ Selector de ID NO SE USA ya que tiene demasiadas especificaciones
 
 Selectores multiples: Le agrega a varias cosas el mismo estilo
 
+### CSSS RESET
+
+Primero se realiza el CSS, para asegurarte de que los navegadores no modifiquen el CSS
+Normalmente se aplica en un ficehro aparte
+Primero reseteo los estilos y luego agrego los mios
+En un proyecto real es práctico. Pero no vamos a estar usandolo mucho para aprender cosas
+
 ### Medida REM:
 
-Si quiero modificar fuentes siempre uso REM por accesibilidad. Ayuda al usuario a que pueda aumentar la tipografia. Cosa que los PX no permiten
+Si quiero modificar fuentes siempre uso REM por accesibilidad. Ayuda al usuario a que pueda aumentar la tipografia. Cosa que los PX no permiten.
+Valen igual en toda mi pagina web, es una unidad estable.
+
+### Medida EM:
+
+Es relativo y varia segun se va cambiando el tamaño de la letra.
+
+### Medida en viewport height / width
+
+min-height: 100vh; Setea la minima altura al viewport (la pantalla en donde se esta mirando tu web)
+Lo usamos sobre todo para headers y footer que le queramos dar un tamaño
+min-width: 100wh;
+
+### Medida caracteres
+
+Que no ponga en la pantalla lineas de más de X caracteres
+
+### COLOR
+
+Inherit coge el valor que heredaria de tu padre. Para que si hay cambios no haya que cambiarlos
+Initial hace que vuelva al valor que tenía al principio de todo
+La paleta de colores se aplica mediante variables por JS
+
+### Propiedades logicas
+
+No se usa mas top, bottom, left, right
+margin-block-start: ; al principio del bloque (top)
+margin-block-end: ; al final del bloque (bottom)
+margin-inline-start: ; al principio de la linea (right)
+margin-inline-end: ; al final de la linea (left)
+
+## Cajas
+
+En CSS todo es cajas. Tienen contenido, padding, borde y margen
+Modelo de cajas : Box-Sizing: border-box = Indica su borde, su padding y su contenido. Para acomodar las cajas en la pantalla.
+El border-box, no se hereda. Por eso siempre lo ponemos al principio y con (UN SOLO ASTERISCO) **{}. Para aplicarselo a todo el html.
+Se escapan dos elementos, el after y el before. Por lo cual, ponemos ** , **::after, **::before {}
+
+### Margen
+
+El margen se entiende como una cosa externa
+
+## Maquetar
+
+Reacomodar la disposicion de los elementos (Layout)
+Para ayudarnos a crear layouts usamos flex-box y grid (cuando sea necesario)
+Ambos son modos de display
+
+### Display FLEX
+
+Automaticamente todos los elementos a los que les das display flex, los elementos dejan de ser bloque para ser linea.
+Se aplica en el contenedor padre
+
+#### Flex direction
+
+ROW - COLUMN - ROW REVERSE - COLUMN REVERSE
+ROW: de der a izq
+COLUMN de abajo arriba
+
+#### Flex-wrap
+
+No-Wrap = Se aplastan para caber todos dentro, no revasaria
+wrap = Se dividen las pantallas al 50% (si cabe en dos columnas) y lo coloca al principio a la izq
+
+#### Flex-flow
+
+Une flex direction y wrap
+
+#### Justify content
+
+Se utiliza para centrar elementos en la pantalla
+Permite colocar los elementos de izq a derecha
+Horisontal
+
+#### Align Items
+
+Se utiliza para centrar elementos en la pantalla
+Permite colocar los elementos de arriba a abajo
+Vertical
+
+#### Gap
+
+Sirve para dejar un espacio entre los distintos elementos
+Es mejor utilizar esto que margin, para separar a los hijos
+Lo realiza respecto a los hijos del contenedor al que se lo aplicas
+
+#### Propiedades para aplicar a los hijos
+
+Con order le damos un orden a sus hijos EJ: order: 2; (lo pone segundo)
+Para posicionar un elemento sin tener en cuenta los demas elementos EJ align-self: center;

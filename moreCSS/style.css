@@ -1,0 +1,24 @@
+/* Definir elementos de JS desde el root. En el podemos definir varibales. Normalmente se definen globalmente
+desde el root 
+Se suelen guardar: 
+numeros (los coleres son un hexadecimal), letras, espaciados*/
+:root {
+    --color-primary: brown;
+    --font-primary: Arial, Helvetica, sans-serif;
+
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Llamamos a la variable donde la vamos a usar*/
+html, body {
+    min-height: 100vh;
+    background-color: var(--color-primary);
+    font-family: var(--font-primary);
+}
+
+p {
+    width: 50ch;
+}

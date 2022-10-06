@@ -1,6 +1,12 @@
-/* Esto siempre lo hacemos */
-* {
+/* Esto siempre lo hacemos. Define el modelo de la caja*/
+*, *::after, *::before {
     box-sizing: border-box;
+}
+
+/*Fijar tamaño minimo al contenedor 
+min-height = Que como minimo tenga este tamaño */
+html, body {
+    min-height: 100vh;
 }
 
 /* Directivas que empiezan con @ ⬇*/
@@ -78,6 +84,13 @@ h1::before {
     content: '👑';
 }
 
+/*Crear un div vacio para jugar con lineas y diseños. Siempre que no sea contenido de valor 
+semantico y sea de valor estetico, puedo gestionar su contenido desde CSS */
+form::after {
+    content: '<div></div>';
+    border: 10px;
+}
+
 /* Pseudo clase pertenece a la clase por su circunstancia, Se determina la clase por su estado */
 
 p:hover {
@@ -85,7 +98,9 @@ p:hover {
 }
 
 /* Depende de la posicion que ocupa dependiendo del lugar que ocupa 
-N vale lo que diga el numero entre ()*/
+N vale lo que diga el numero entre ()
+:nth-of-type(2n+1) (para seleccionar los elementos impares de un elemento)
+*/
 p:nth-of-type(2n) {
     font-size: 2rem;
 }
