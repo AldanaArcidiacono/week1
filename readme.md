@@ -340,7 +340,9 @@ flex-basis: ; Que quiero que tomen como punto de partida
 Si los dos tienen el valor de creciemito igual (grow) crecen al 50%
 Utiliza un ratio entre valores. Hay veces que no es tan preciso.
 
-### React
+### Grid
+
+Manera de colocar elementos de HTML como cuadricula. Grid tiene filas y columnas. Dependiendo de las filas y columnas, vamos poniendo los elementos hijos de esas filas y columnas
 
 #### Position
 
