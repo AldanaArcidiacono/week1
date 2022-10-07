@@ -461,14 +461,20 @@ Los elementos que van dentro del bloque. Se indican con el nombre de su bloque \
 
 #### Modificadores:
 
-Elementos de CSS que nos van a permitir cambiar la aparencia y comportamiento de los bloques y los elementos
+Elementos de CSS que nos van a permitir cambiar la aparencia y comportamiento de los bloques y los elementos. Se escriben con -- . Se convinan clases de bloques y elementos. Ej button\_\_icon--inverted
+Podemos aplicar todos los que hagan falta
 
 #### Estados:
 
-Modificadores temporales. Ej hover.
+Modificadores temporales. Ej hover. Su nombre se definen con un - e incluimos is o has, para indicar que es algo temporal.
 
 #### Target
 
 transition, transform y animation para generar transiciones
 
 p\*4>lorem = Genrea 4 parrafos de lorem ipsum
+
+### Hook
+
+Es un punto donde se ejecuta un codigo. Le doy un nombre y automaticamente se ejecuta algo en un momento dado.
+Ej, si cojo un hook y lo llamo start, git sabe que lo debe ejecutar al principio.
