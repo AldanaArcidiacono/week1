@@ -1,0 +1,19 @@
+article {
+    position: relative;
+    z-index: 10;
+}
+
+.img-container {
+    width: clamp(300px, 60%, 900px);
+    /* width: 90%;
+    min-width: 300px;
+    max-width: 900px; */
+    border: 1px grey solid;
+    position: fixed;
+    top: 100px;
+    left: 200px;
+}
+
+.img-container img {
+    width: 100%;
+}

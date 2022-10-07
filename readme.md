@@ -328,7 +328,7 @@ Lo realiza respecto a los hijos del contenedor al que se lo aplicas
 Con order le damos un orden a sus hijos EJ: order: 2; (lo pone segundo)
 Para posicionar un elemento sin tener en cuenta los demas elementos EJ align-self: center;
 
-#### Flex
+### Flex
 
 flex: 0 1 auto;
 Flex es el resumen de las demas propiedades juntas:
@@ -340,6 +340,38 @@ flex-basis: ; Que quiero que tomen como punto de partida
 Si los dos tienen el valor de creciemito igual (grow) crecen al 50%
 Utiliza un ratio entre valores. Hay veces que no es tan preciso.
 
+### React
+
+#### Position
+
+No se utiliza para constuir un layout, pero la usamos para mover elementos.
+
+#### Static:
+
+Es el que suelen tener por defecto, se coloca donde diga el layout. No hace falta ponerla ya que es el valor por defecto.
+
+##### Relative:
+
+Lo cambia a un plano encima sobre el que lo puede mover. Pero no lo mueve. Lo sube al espacio relativo y espacio debajo, no lo modifica. Coordenadas respecto a su posicion que ocupaba.
+Para moverla hay que agregarle un top
+
+##### Absolute:
+
+En esta propiedad, si modifica el espacio debajo. Coordenadas respecto a los ejes del contenedor. Por defecto el contenedor que usa es el body. Si queremos modificarlo, debemos darle a su padre position relative, para mover la img dentro del contenedor padre que tiene.
+
+##### Fixed:
+
+Fija algo (coordenadas igual que el relativo), pero siempre es relativo al viewport
+(Ej para fijar un header)
+
+##### Sticky:
+
+Es similar al fixed, pero cuando haces scroll se haga mas estrecho.
+
+##### z-index:
+
+Le dice en la capa que quiero que se acomode. Si le pones un numero negativo, el elemento irá al fondo.
+
 ## Metalenguaje
 
 Un lenguaje que el navegador no entiende. El navegador solo entiende JS, CSS y HTML
@@ -350,4 +382,56 @@ El codigo fuente (EJ: SASS), no tiene ningun valor y hay que compilarlo para sub
 ### Sass
 
 Es un pre-procesador de CSS
-.
+
+#### Img
+
+Las imagenes se guardan en una carpeta llamada ASSETS
+No tocar a la vez el ancho y alto de las imagenes. Ellas solas manejan su ratio y se acomodara su realacion entre el ancho y el alto. Se elije uno de los dos y el otro se adapta solo.
+
+Esto no pasa con los iframe (ej youtube).
+Se soluciona con el aspect-ratio. Le decimos que conseve el ratio 19:9 con el que vienen los videos
+
+Editar y ajustar el tamaño y PESO de imagenes
+Es mas facil gestionar imagenes si las envolvemos en un contenedor (div)
+El comportamento natural de una img, es que la pongas donde la pongas, sale en su estado natural, desbordando su contenedor. Para evitar esto se le da a las img un ancho o un alto. (ej width 100% DE SU CONTENEDOR)
+Si le damos un % a su contenedor, podemos hacer que la img siempre ocupe, por ej, el 50% de la pagina. Con min-widht le decimos el tamaño minimo al que queremos que llegue
+Para pantallas grandes, se pixelaria la imagen. Por lo que hay que ponerle un max-width con su tamaño original
+
+#### clamp()
+
+Permite especificar minimo maximo y comportamiento ideal
+EJ:
+width: clamp(300px, 90%, 900px);
+Seria lo mismo que decir:  
+width: 90%;
+min-width: 300px;
+max-width: 900px;
+
+## Responsive:
+
+En el mismo html, entienda como debe verse dependiendo del tamaño de la pantalla. Flexivilidad.
+Aplicar un layput diferente (incluso dif info), en relacion al tamaño de la pantalla.
+Pasamos de uno al lado del otro a uno abajo del otro.
+Nunca se tiene mas de un HTML, esto se hace por CSS.
+
+### Media Queris:
+
+Consutlas hacia los anchos y altos del viewport.
+Es necesario tener el metadato viewport en el HTML para usarlas.
+Le vamos a decir que a partir de un tamaño se apliquen ciertos cambios.
+Se le indica que cambie ciertas caracteristicas de CSS cuando la pantalla sea de x tamaño.
+SOLO se ponen los CAMBIOS. Ya que lo que sigue igual lo agrega del CSS anterior
+Se cambian las cosas de sitio, cuando el diseñador decide que se debe modificar
+Se pueden poner todas las que quieras, en el momento que quieras y con indicaciones presisas.
+Se acomodan ordenadamente (a 400 un cambio, a 600 otro, a 700 otro, etc)
+
+#### Movile first
+
+Primero lo diseño para el movil y despues lo diseño en desktop
+Es mas facil diseñar para movil y luego llevarlo a mas grande.
+
+### Diseños fluent.
+
+Lo conseguimos poninedo los tamaños en porcentajes.
+Para sacar el tamaño del porcentaje que debemos usar, usamos la regla de 3 simple ((medida1/medidatot)\*100). NO SE REDONDEA.
+Tiene sus limites, en algunos diseños no nos funciona (Ej es muy chico).
