@@ -425,6 +425,10 @@ Se cambian las cosas de sitio, cuando el diseñador decide que se debe modificar
 Se pueden poner todas las que quieras, en el momento que quieras y con indicaciones presisas.
 Se acomodan ordenadamente (a 400 un cambio, a 600 otro, a 700 otro, etc)
 
+Se definen:
+@media, screen (la pantalla, esto queda siempre igual) and min-width: 300px (en el momento que queremos que cambie)
+Dentro de la media query vamos escribiendo las instrucciones de CSS como siempre se escriben
+
 #### Movile first
 
 Primero lo diseño para el movil y despues lo diseño en desktop
@@ -436,5 +440,35 @@ Hay iconos en librerias que podemos utilizar (IconFonts). Te hace descargarlas t
 Lo conseguimos poninedo los tamaños en porcentajes.
 Para sacar el tamaño del porcentaje que debemos usar, usamos la regla de 3 simple ((medida1/medidatot)\*100). NO SE REDONDEA.
 Tiene sus limites, en algunos diseños no nos funciona (Ej es muy chico).
+
+#### Los ID
+
+Nos permiten hacer navegacion interna dentro de nuestra pagina.
+Al viajar a un lugar del sitio, ese sitio, recibe la seudoclase target
+
+### BEM
+
+Metodologia que ayuda a crear un CSS mas reutilizable. Es una convencion de nombres.
+Bloque-Elemento-Modificador = BEM
+
+#### Bloque:
+
+Componente de alto nivel que ayuda a representar la logica mediante elementos con funcionalidad y logica independiente (Bloques de mas alto nivel). Siempre se definen con letras minusculas, numeros y - (kebab case). Tan generico como sea posible y tan especificio como sea necesario
+
+#### Elemento:
+
+Los elementos que van dentro del bloque. Se indican con el nombre de su bloque \_\_ nombre de elemento.
+
+#### Modificadores:
+
+Elementos de CSS que nos van a permitir cambiar la aparencia y comportamiento de los bloques y los elementos
+
+#### Estados:
+
+Modificadores temporales. Ej hover.
+
+#### Target
+
+transition, transform y animation para generar transiciones
 
 p\*4>lorem = Genrea 4 parrafos de lorem ipsum

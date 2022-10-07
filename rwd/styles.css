@@ -1,6 +1,6 @@
 :root {
     --color-primary: brown;
-    --color-secondary: bisque;
+    --color-secondary: #ffe4c4;
     --font-primary: Arial, Helvetica, sans-serif;
 }
 
@@ -16,9 +16,12 @@ body {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
+    max-width: 1000px;
+    font-family: var(--font-primary);
 }
 
 header,
@@ -31,10 +34,26 @@ footer {
     align-items: center;
 }
 
+header {
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
 main {
+    background-color: bisque;
     flex: 30 0 12vh;
-    /* display: flex;
-    gap: 1rem; */
 }
 
 section,
@@ -44,14 +63,35 @@ aside {
     padding: 1rem;
 }
 
-/* section {
-    flex: 2 0 auto;
-    margin-right: 0;
-    max-width: 70%;
+@media screen and (min-width: 500px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
 }
 
-aside {
-    flex: 1 0 auto;
-    margin-left: 0;
-    max-width: 20%;
-} */
+aside:target {
+    background-color: blue;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        display: flex;
+        gap: 1rem;
+    }
+
+    section {
+        flex: 2 0 auto;
+        margin-right: 0;
+        max-width: 70%;
+    }
+
+    aside {
+        flex: 1 0 auto;
+        margin-left: 0;
+        max-width: 20%;
+    }
+}
