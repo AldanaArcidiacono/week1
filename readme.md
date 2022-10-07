@@ -429,9 +429,12 @@ Se acomodan ordenadamente (a 400 un cambio, a 600 otro, a 700 otro, etc)
 
 Primero lo diseño para el movil y despues lo diseño en desktop
 Es mas facil diseñar para movil y luego llevarlo a mas grande.
+Hay iconos en librerias que podemos utilizar (IconFonts). Te hace descargarlas todas. Si solo quiero un icono lo busco como icono unico. (.svg formato de vector)
 
 ### Diseños fluent.
 
 Lo conseguimos poninedo los tamaños en porcentajes.
 Para sacar el tamaño del porcentaje que debemos usar, usamos la regla de 3 simple ((medida1/medidatot)\*100). NO SE REDONDEA.
 Tiene sus limites, en algunos diseños no nos funciona (Ej es muy chico).
+
+p\*4>lorem = Genrea 4 parrafos de lorem ipsum
