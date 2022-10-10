@@ -39,6 +39,10 @@ Se puede mover y eliminar.
 Podemos tener ramas infinitas. Pero solo UN HEAD
 git reset (nombre del commit) para ponerlo en la rama que queramos
 
+Una vez que alguien hace un PR, hago un pull en la main. Una vez hecho eso, debo actualizar mi rama. Le hago un merge de la main a mi rama para tenerla actualizada. Una vez que acabo la rama, se hace un push.
+Si no nos aprueban un pull request, modifico en mi rama local y añado en ella los cambios que me han pedido y una vez que los termine, vuelvo hacer el push. No se vuelve a hacer la PR ya que esta se actualiza y le aviso a la persona para que lo corrija
+Siempre que se haga un merge, se elimina la rama y se crea otra.
+
 ## Have conflicts locally
 
 Primero actualizamos el MAIN
@@ -456,10 +460,16 @@ Bloque-Elemento-Modificador = BEM
 #### Bloque:
 
 Componente de alto nivel que ayuda a representar la logica mediante elementos con funcionalidad y logica independiente (Bloques de mas alto nivel). Siempre se definen con letras minusculas, numeros y - (kebab case). Tan generico como sea posible y tan especificio como sea necesario
+Los bloques son elementos FUNCIONALES
+nombre\_\_bloque--nombre-elemento
+&-- se usa para mencionar que es el nombre del bloque dentro del que estas anidando (en sass) para no repetir mensajes
 
 #### Elemento:
 
 Los elementos que van dentro del bloque. Se indican con el nombre de su bloque \_\_ nombre de elemento.
+Los elementos se pueden anidar (en sass), pero los nombres no anidan.
+Su padre bloque + ** + elemento
+bloque**elemento, siempre. No se van agregando elementos (bloque\_\_elemento--elemento) aunque esten anidados en el HTML. Solo muestran a que bloque pertenecen, pero no a que elemento
 
 #### Modificadores:
 
